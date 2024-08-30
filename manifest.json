@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DnD Beyond Font of Magic Fix",
+  "version": "1.0",
+  "description": "Fixes the Font of Magic by duplicating spell slots on DnD Beyond.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.dndbeyond.com/*", "*://dndbeyond.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
