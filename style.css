@@ -3,5 +3,22 @@
   /* border: 2px solid red; */
   /* padding: 1px; */
   /* border-radius: 5px; */
+  margin-left: 10px;
   padding-left: 5px;
+  padding-right: 5px;
+}
+
+.magical-appearance {
+  transition: opacity 1s ease-in-out, box-shadow 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  border-radius: 5px; /* Add this line */
+}
+
+.magical-appearance.show {
+  opacity: 1 !important;
+  box-shadow:
+    0 0 10px rgba(255, 0, 0, 0.6),
+    0 0 20px rgba(255, 215, 0, 0.6),
+    0 0 30px rgba(255, 100, 0, 0.4);
+  border-radius: 8px; /* Add this line */
 }
